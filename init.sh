@@ -2,7 +2,7 @@
 
 set -ex
 
-rm -rf || true
+rm -rf rfcenv || true
 virtualenv rfcenv
 source rfcenv/bin/activate
 pip install id2xml
