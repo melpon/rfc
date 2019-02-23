@@ -9,7 +9,8 @@ source rfcenv/bin/activate
 id2xml rfc6455.txt
 
 vim rfc6455.xml
--> Add <?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?> to line 2
+-> Add to line 2
+<?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
 
 vim README.md
 -> Add RFC link
