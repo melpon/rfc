@@ -1,3 +1,4 @@
+RFC のテキストファイルは改行のせいで Google 翻訳がうまく機能してくれないので、xml に変換してうまく翻訳できるようにするプロジェクトです。
 
 - [RFC3533](https://melpon.github.io/rfc/rfc3533.xml) - The Ogg Encapsulation Format Version 0
 - [RFC6455](https://melpon.github.io/rfc/rfc6455.xml) - The WebSocket Protocol
