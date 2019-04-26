@@ -889,6 +889,7 @@ Chunk stream IDs with values 64-319 could be represented by either
  Size message if the window size is different from the last one sent
  to the sender of this message.
 
+```
   0                   1                   2                   3
   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -896,6 +897,7 @@ Chunk stream IDs with values 64-319 could be represented by either
  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
  |  Limit Type   |
  +-+-+-+-+-+-+-+-+
+```
 
  Payload for the ‘Set Peer Bandwidth’ protocol message
  The Limit Type is one of the following values:
