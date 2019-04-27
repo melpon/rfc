@@ -128,11 +128,13 @@ to involve further obfuscation of the Client and Server Digests,
 and is understood to be implemented in Flash 10.
 
 Command byte:
+
     0x06 if encrypted
     0x08 if further encrypted (undocumented)
     0x03 if unencrypted
 
 Message:
+
     0:3        32-bit system time, network byte ordered (htonl)
     4:7        Client Version.  e.g. 0x09 0x0 0x7c 0x2 is 9.0.124.2
     8:11       Obfuscated pointer to "Genuine FP" key 
@@ -167,10 +169,12 @@ necessary for clients to utilise the SHA verification to determine
 which of the two message formats is being received (!)
 
 Command byte:
+
     0x06 if encrypted - same as client request
     0x03 if unencrypted - same as client request
 
 Message Format 1:
+
     0:3        32-bit system time, network byte ordered (htonl)
     4:7        Server Version.  e.g. 0x09 0x0 0x7c 0x2 is 9.0.124.2
     8:11       Obfuscated pointer to "Genuine FMS" key 
@@ -190,6 +194,7 @@ Calculate location of Server Diffie Hellmann Public Key and get it:
     DHPublicKeyS = serversig[dhpkl:dhpkl+127]
 
 Message Format 2:
+
     0:3        32-bit system time, network byte ordered (htonl)
     4:7        Server Version.  e.g. 0x09 0x0 0x7c 0x2 is 9.0.124.2
     8:767      Random Data and 128-bit Diffie-Hellmann key 
@@ -306,7 +311,6 @@ data (the last 32 bytes of the first server response).
 
 According to rtmpdump's README:
 
-```
     Download the swf player you want to use for SWFVerification, unzip it using
         $ flasm -x file.swf
     It will show the decompressed filesize, use it for --swfsize
@@ -314,7 +318,6 @@ According to rtmpdump's README:
         $ openssl sha -sha256 -hmac "Genuine Adobe Flash Player 001" file.swf
     and use the --swfhash "01234..." option to pass it.  e.g.
         $ ./rtmpdump --swfhash "123456..." --swfsize 987...
-```
 
 In other words, the "verification" algorithm basically links the
 SWF file with the content that is being accessed through it.  The SWF file
