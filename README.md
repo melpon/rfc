@@ -5,6 +5,7 @@ RFC のテキストファイルは改行のせいで Google 翻訳がうまく�
 - [RFC6458](https://melpon.github.io/rfc/rfc6458.xml) - Sockets API Extensions for the Stream Control Transmission Protocol (SCTP)
 - [RFC6716](https://melpon.github.io/rfc/rfc6716.xml) - Definition of the Opus Audio Codec
 - [RFC6951](https://melpon.github.io/rfc/rfc6951.xml) - UDP Encapsulation of Stream Control Transmission Protocol (SCTP) Packets for End-Host to End-Host Communication
+- [RFC7049](https://melpon.github.io/rfc/rfc7049.xml) - Concise Binary Object Representation (CBOR)
 - [RFC7053](https://melpon.github.io/rfc/rfc7053.xml) - SACK-IMMEDIATELY Extension for the Stream Control Transmission Protocol
 - [RFC7517](https://melpon.github.io/rfc/rfc7517.xml) - JSON Web Key (JWK)
 - [RFC7845](https://melpon.github.io/rfc/rfc7845.xml) - Ogg Encapsulation for the Opus Audio Codec
